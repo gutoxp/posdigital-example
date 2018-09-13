@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EditText">
+        <attr name="editText_hint" format="string" />
+        <attr name="editText_text" format="string" />
+        <attr name="editText_hideKeyboard" format="boolean" />
+        <attr name="editText_maxLength" format="integer" />
+        <attr name="editText_requestFocus" format="boolean" />
+        <attr name="editText_inputType" format="integer">
+            <flag name="text" value="1" />
+            <flag name="number" value="2" />
+            <flag name="phone" value="3" />
+            <flag name="password" value="4" />
+            <flag name="passwordNumber" value="5" />
+        </attr>
+        <attr name="editText_mask" format="integer">
+            <flag name="money" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Spinner">
+        <attr name="spinner_text" format="string" />
+        <attr name="spinner_entries" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="DatePickerView">
+        <attr name="hint" format="string" />
+    </declare-styleable>
+
+</resources>

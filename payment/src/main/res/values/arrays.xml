@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_client" >
+        <item>Acessar pagamento via -> DEEPLINKS</item>
+        <item>Acessar pagamento via -> ACTION</item>
+    </string-array>
+</resources>

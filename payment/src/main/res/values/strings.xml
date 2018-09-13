@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Payment Client</string>
+    <string name="info">Info</string>
+    <string name="reprint">Imprimir Novamente</string>
+    <string name="refund">Reembolso</string>
+    <string name="pre_auth">Pré-autorização</string>
+    <string name="payment">PAGAMENTO</string>
+
+
+    <string-array name="payment_types">
+        <item>@string/select</item>
+        <item>@string/debit</item>
+        <item>@string/credit_sight</item>
+        <item>@string/credit_store_financial</item>
+        <item>@string/credit_emitter_financial</item>
+        <item>@string/voucher</item>
+    </string-array>
+
+    <string name="select">Selecione</string>
+    <string name="debit">Débito</string>
+    <string name="credit_sight">Crédito à vista</string>
+    <string name="credit_store_financial">Crédito parcelado lojista</string>
+    <string name="credit_emitter_financial">Crédito parcelado emissor</string>
+    <string name="voucher">Voucher</string>
+
+</resources>
