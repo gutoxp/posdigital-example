@@ -1,11 +1,9 @@
 # Pos Digital
 
-
-
 ## Pagamento
 
-Para realizar pagamentos será preciso invocar deeplinks. Veja mais detalhes no PDF "payment/DOCS/API de Pagamento POS Digital Android Getnet 2_2.pdf".
-O app "payment/DOCS/Rebatedor-v2.2.0.apk" simula as respostas do app de Pagamento então você precisa instalar este app no terminal durante o desenvolvimento, assim você não irá precisar dos cartões de teste.
+Para realizar pagamentos será preciso invocar deeplinks. Veja mais detalhes no ![PDF](https://github.com/GETNETBrasil/posdigital-example/tree/master/payment/DOCS/api_pagamento_getnet.pdf).
+O ![app](https://github.com/GETNETBrasil/posdigital-example/tree/master/payment/DOCS/Rebatedor-v2.2.0.apk) simula as respostas do app de Pagamento então você precisa instalar este app no terminal durante o desenvolvimento, assim você não irá precisar dos cartões de teste.
 
 ## O que você precisa saber antes de começar a desenvolver
 
@@ -13,7 +11,7 @@ O app "payment/DOCS/Rebatedor-v2.2.0.apk" simula as respostas do app de Pagament
 Xamarin irá compilar o código para o “Android Runtime (ART)” como se fosse um app
 nativo)
 2. É expressamente proibido WebApps e WebView devido a medidas de segurança
-3. O GooglePlay Services não estará disponível
+3. O GooglePlayService não estará disponível
 4. Suporte ao Android 5.1 (22)
 5. É de responsabilidade do desenvolvedor garantir a segurança da informação circulada
 dentro do aplicativo.
@@ -41,6 +39,19 @@ Esta disponibilizado na pasta sdk/libs uma .aar. Basta importar este .aar no Gra
 
 No gradle do seu app adicione essa linha:
 ```
+android {
+  compileSdkVersion 27
+  defaultConfig {
+    minSdkVersion 22
+    targetSdkVersion 27
+  }
+}
+
+compileOptions {
+  sourceCompatibility JavaVersion.VERSION_1_8
+  targetCompatibility JavaVersion.VERSION_1_8
+}
+
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.aar'])
 }
@@ -55,17 +66,17 @@ dependencies {
 5. Beeper
 6. Camera
 
-## Fazendo Bing no service
+## Fazendo bind no service
 
 Adicione no AndroidManifest.xml está permissão
 
-```
+```xml
 <uses-permission android:name="com.getnet.posdigital.service.POSDIGITAL" />
 ```
 
 A classe PosDigital possui métodos que auxiliam no bind do serviço:
 
-```
+```java
 PosDigital.register(getApplicationContext(), new PosDigital.BindCallback(){
 
   @Override
@@ -95,7 +106,7 @@ Para utilizar os eventos de cartões basta chamar o método ```PosDigital.getIns
 Há alguns exemplos de uso na classe ```CardActivity```
 
 Exemplo
-```
+```java
 int timeout = 30; // Segundos
 int[] searchType = {SearchType.MAG, SearchType.CHIP, SearchType.NFC};
 PosDigital.getInstance().getCard().search(timeout, searchType, new ICardCallback.Stub(){
@@ -125,7 +136,7 @@ Para utilizar a impressora basta chamar o método ```PosDigital.getInstance().ge
 Há alguns exemplos de uso na classe ```PrinterActivity```
 
 Exemplo:
-```
+```java
 PosDigital.getInstance().getPrinter().init();
 PosDigital.getInstance().getPrinter().setGray(5);
 PosDigital.getInstance().getPrinter().defineFontFormat(FontFormat.MEDIUM);
@@ -145,7 +156,7 @@ PosDigital.getInstance().getPrinter().print(new IPrinterCallback.Stub() {
 
 O tratamento de erros da impressão pode ser feito com o auxilio das constantes da classe ```PrinterStatus```
 
-```
+```java
 PrinterStatus.OK -> "OK"
 PrinterStatus.PRINTING -> "Imprimindo"
 PrinterStatus.ERROR_NOT_INIT -> "Impressora não iniciada"
@@ -172,7 +183,7 @@ Há alguns exemplos de uso na classe ```MifareActivity```
 
 Para ligar e desligar os Leds basta chamar o método ```PosDigital.getInstance().getLeds() ``` e estarão disponíveis as funções dos lds.
 
-```
+```java
  PosDigital.getInstance().getLed().turnOnAll()
  PosDigital.getInstance().getLed().turnOffAll()
 ```
@@ -186,7 +197,7 @@ Para utilizar o beeper basta chamar o método ```PosDigital.getInstance().getBee
 
 Há alguns exemplos de uso na classe ```BeeperActivity```
 
-```
+```java
   PosDigital.getInstance().getBeeper().success()
 ```
 
@@ -196,7 +207,7 @@ Para utilizar a camera basta chamar o método ```PosDigital.getInstance().getCam
 
 Há alguns exemplos de uso na classe ```CameraActivity```
 
-```
+```java
   int timeout = 30 // segundos
   PosDigital.getInstance().getCamera().readBack(timeout, new ICameraCallback.Stub(){
 
