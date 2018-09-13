@@ -1,0 +1,32 @@
+[
+  {
+    "id": "CARD",
+    "label": "Cartão",
+    "icon": "drawable/ic_card"
+  },
+  {
+    "id": "MIFARE",
+    "label": "MIFARE",
+    "icon": "drawable/ic_card"
+  },
+  {
+    "id": "PRINTER",
+    "label": "Impressora",
+    "icon": "drawable/ic_printer"
+  },
+  {
+    "id": "BEEPER",
+    "label": "Beeper",
+    "icon": "drawable/ic_beeper"
+  },
+  {
+    "id": "LED",
+    "label": "Led",
+    "icon": "drawable/ic_led"
+  },
+  {
+    "id": "CAMERA",
+    "label": "Camera",
+    "icon": "drawable/ic_camera"
+  }
+]

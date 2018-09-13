@@ -1,0 +1,40 @@
+[
+  {
+    "id": "BEEPER",
+    "label": "Beeper",
+    "icon": "drawable/ic_beeper",
+    "message": "Com este serviço o desenvolvedor poderá notificar o usuário através de sons.\n\nHá exemplos de uso na classe BeeperActivity contida no projeto de exemplo."
+  },
+  {
+    "id": "SUCCESS",
+    "label": "success",
+    "code": "PosDigital.getInstance().getBeeper().success()",
+    "message": "Reproduz o som default de sucesso"
+  },
+  {
+    "id": "ERROR",
+    "label": "error",
+    "code": "PosDigital.getInstance().getBeeper().error()",
+    "message": "Reproduz o som default de erro"
+  },
+  {
+    "id": "DIGIT",
+    "label": "digit",
+    "code": "PosDigital.getInstance().getBeeper().digit()",
+    "message": "Reproduz o som default quando o usuário digita algo"
+  },
+  {
+    "id": "NFC",
+    "label": "nfc",
+    "code": "PosDigital.getInstance().getBeeper().nfc()",
+    "message": "Reproduz o som default quando o dispositivo NFC/Mifare/etc pode ser afastado"
+  },
+  {
+    "id": "CUSTOM",
+    "label": "custom",
+    "code": "val millisecods = 5000 \n\nPosDigital.getInstance().getBeeper().custom(millisecods)",
+    "message": "Reproduz som por determinado tempo"
+  }
+
+
+]

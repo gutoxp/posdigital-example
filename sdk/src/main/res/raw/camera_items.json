@@ -1,0 +1,20 @@
+[
+  {
+    "id": "CAMERA",
+    "label": "Camera",
+    "icon": "drawable/ic_camera",
+    "message": "Com este serviço o desenvolvedor pode ler código de barra e QrCode.\n\nHá exemplos de uso na classe CameraActivity contida no projeto de exemplo."
+  },
+  {
+    "id": "START_BACK",
+    "label": "startBack",
+    "code": "val timeout = 30\n\nPosDigital.getInstance().getCamera().readBack(timeout, ICameraCallback.Stub())",
+    "message": "Liga a camera traseira e inicia uma aplicação default para ler códigos"
+  },
+  {
+    "id": "START_FRONT",
+    "label": "startFront",
+    "code": "val timeout = 30\n\nPosDigital.getInstance().getCamera().readFront(timeout, ICameraCallback.Stub())",
+    "message": "Liga a camera frontal e inicia uma aplicação default para ler códigos"
+  }
+]

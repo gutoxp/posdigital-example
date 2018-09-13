@@ -1,0 +1,110 @@
+[
+  {
+    "id": "MIFARE",
+    "label": "MIFARE",
+    "icon": "drawable/ic_card",
+    "message": "Com este serviço será possível integrar o terminal a dispositivos Mifare"
+  },
+  {
+    "id": "SEARCH_CARD",
+    "label": "searchCard",
+    "code": "PosDigital.getInstance().getMifare().searchCard(IMifareCallback.Stub())",
+    "message": "Identifica quando um dispositivo se aproximou do terminal."
+  },
+  {
+    "id": "SEARCH_CARD_AND_ACTIVATE",
+    "label": "searchCardAndActivate",
+    "code": "PosDigital.getInstance().getMifare().searchCardAndActivate(IMifareCallback.Stub())",
+    "message": "Identifica quando um dispositivo se aproximou do terminal e o ativa. Este método pode ser usado com dispositivos com problemas e/ou como tentativa após falha na autenticação"
+  },
+  {
+    "id": "ACTIVATE",
+    "label": "activate",
+    "code": "val cardType = 0\n\nPosDigital.getInstance().getMifare().activate(cardType)",
+    "message": "Ativa um dispositivo de acordo com o seu tipo"
+  },
+  {
+    "id": "HALT",
+    "label": "halt",
+    "code": "PosDigital.getInstance().getMifare().halt()",
+    "message": "Sinaliza que todos os comandos foram executados"
+  },
+  {
+    "id": "SERIAL_NO",
+    "label": "getCardSerialNo",
+    "code": "val cardType = 0\n\nPosDigital.getInstance().getMifare().getCardSerialNo(cardType)",
+    "message": "Retorna o número do seria do dispositivo"
+  },
+  {
+    "id": "AUTH_SECTOR_KEY_A",
+    "label": "authenticateSectorWithKeyA",
+    "code": "PosDigital.getInstance().getMifare().authenticateSectorWithKeyA(block, key)",
+    "message": "Autentica um setor com a chave A"
+  },
+  {
+    "id": "AUTH_SECTOR_KEY_B",
+    "label": "authenticateSectorWithKeyB",
+    "code": "PosDigital.getInstance().getMifare().authenticateSectorWithKeyB(block, key)",
+    "message": "Autentica um setor com a chave B"
+  },
+  {
+    "id": "AUTH_BLOCK_KEY_A",
+    "label": "authenticateBlockWithKeyA",
+    "code": "PosDigital.getInstance().getMifare().authenticateBlockWithKeyA(block, key)",
+    "message": "Autentica um bloco com a chave A"
+  },
+  {
+    "id": "AUTH_BLOCK_KEY_B",
+    "label": "authenticateBlockWithKeyB",
+    "code": "PosDigital.getInstance().getMifare().authenticateBlockWithKeyB(block, key)",
+    "message": "Autentica um bloco com a chave B"
+  },
+  {
+    "id": "CLOSE",
+    "label": "close",
+    "code": "PosDigital.getInstance().getMifare().close()",
+    "message": "Desliga a antena"
+  },
+  {
+    "id": "DECREMENT",
+    "label": "decrement",
+    "code": "PosDigital.getInstance().getMifare().decrement(block, 100)",
+    "message": "Decrementa o valor de um determinado bloco"
+  },
+  {
+    "id": "INCREMENT",
+    "label": "increment",
+    "code": "PosDigital.getInstance().getMifare().increment(block, 100)",
+    "message": "Incrementa o valor de um determinado bloco"
+  },
+  {
+    "id": "EXIST",
+    "label": "isExist",
+    "code": "PosDigital.getInstance().getMifare().isExist",
+    "message": "Identifica se o dispositivo ainda está disponivível (próximo) para leitura/escrita"
+  },
+  {
+    "id": "READ",
+    "label": "readBlock",
+    "code": "PosDigital.getInstance().getMifare().readBlock(block)",
+    "message": "Lê o valor de um determinado bloco"
+  },
+  {
+    "id": "WRITE",
+    "label": "writeBlock",
+    "code": "PosDigital.getInstance().getMifare().writeBlock(block, \"00000000000000000000000000000012\")",
+    "message": "Escreve em um determinado bloco"
+  },
+  {
+    "id": "RESTORE",
+    "label": "restore",
+    "code": "PosDigital.getInstance().getMifare().restore(block)",
+    "message": "Restaura o valo de um determinado valor "
+  },
+  {
+    "id": "TRANSFER",
+    "label": "transfer",
+    "code": "PosDigital.getInstance().getMifare().transfer(block)",
+    "message": "Copia para memória RAM o valor de um determinado bloco"
+  }
+]

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DevKit</string>
+
+    <string name="header_service">Service</string>
+    <string name="item_code">CODE</string>
+    <string name="item_test">TEST</string>
+
+
+</resources>

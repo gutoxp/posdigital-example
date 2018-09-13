@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "br.com.getnet.payment"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode getVersionCode()
+        versionName "1.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    def versions = rootProject.ext
+
+    implementation "com.android.support:appcompat-v7:${versions.supportVersion}"
+    implementation "com.android.support:design:${versions.supportVersion}"
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.constraintLayoutVersion"
+    implementation 'com.jakewharton:butterknife:8.8.1'
+
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+
+    configurations.all {
+        resolutionStrategy {
+            force "com.android.support:support-annotations:$rootProject.supportVersion"
+        }
+    }
+}

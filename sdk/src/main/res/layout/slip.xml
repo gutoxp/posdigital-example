@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380px"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_getnet" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/TextAppearance.Slip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Via de TESTE" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/TextAppearance.Slip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="1.0" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/TextAppearance.Slip.Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="NOME DO ESTABELECIMENTO"
+        android:textAlignment="center" />
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/TextAppearance.Slip.Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENDERECO DO ESTABELECIMENTO"
+        android:textAlignment="center" />
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/TextAppearance.Slip.Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="CIDADE DO ESTABELECIMENTO"
+        android:textAlignment="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/TextAppearance.Slip.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="CNPJ: 01.519.037/0001.93" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/TextAppearance.Slip.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="CV: 000013" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/TextAppearance.Slip.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="EC: 10025" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/TextAppearance.Slip.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="TERN: 0123456789" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/TextAppearance.Slip.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="AID: 02312315642" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/TextAppearance.Slip.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="ARQC: 54564sa654as54" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/TextAppearance.Slip.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="MASTER/VISA/AMEX/ELO" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/TextAppearance.Slip.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="************1234" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/TextAppearance.Slip.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEBITO/CREDITO PARCELADO/A VISTA"
+        android:textAlignment="center" />
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/TextAppearance.Slip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="R$ 12,34"
+        android:textAlignment="center" />
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/TextAppearance.Slip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COMPROVANTE DE TESTES"
+        android:textAlignment="center" />
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/TextAppearance.Slip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEM VALOR COMERCIAL"
+        android:textAlignment="center" />
+
+</LinearLayout>

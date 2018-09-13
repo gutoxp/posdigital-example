@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="header_title_fontSize">29sp</dimen>
+    <dimen name="header_label_fontSize">12sp</dimen>
+    <dimen name="header_icon_width">35dp</dimen>
+    <dimen name="header_icon_height">35dp</dimen>
+    <dimen name="header_service_width">15dp</dimen>
+    <dimen name="header_service_height">15dp</dimen>
+
+    <dimen name="item_title_fontSize">23sp</dimen>
+    <dimen name="item_text_fontSize">14sp</dimen>
+    <dimen name="item_height">100dp</dimen>
+    <dimen name="item_icon_width">30dp</dimen>
+    <dimen name="item_icon_height">30dp</dimen>
+    <dimen name="item_icon_marginStart">40dp</dimen>
+    <dimen name="item_label_marginStart">20dp</dimen>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:background="@drawable/ic_shadow">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/item_adapter"
+        android:layout_width="@dimen/item_icon_width"
+        android:layout_height="@dimen/item_icon_height"
+        android:src="@drawable/ic_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/adapter_icon"
+        android:layout_width="@dimen/item_icon_width"
+        android:layout_height="@dimen/item_icon_height"
+        android:layout_marginStart="@dimen/item_icon_marginStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_adapter"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_card" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_adapter_label"
+        style="@style/TextAppearance.Item.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_label_marginStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/adapter_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Cartão" />
+
+</android.support.constraint.ConstraintLayout>
+

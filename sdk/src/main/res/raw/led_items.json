@@ -1,0 +1,68 @@
+[
+  {
+    "id": "LEF",
+    "label": "Led",
+    "icon": "drawable/ic_led",
+    "message": "Com este serviço o desenolvedor poderá ligar e desligar os leds localizados no topo do terminal.\n\nHá exemplos de uso na classe LedActivity contida no projeto de exemplo."
+  },
+  {
+    "id": "ON_ALL",
+    "label": "onAll",
+    "code": "PosDigital.getInstance().getLed().turnOnAll()",
+    "message": "Liga todos os leds"
+  },
+  {
+    "id": "OFF_ALL",
+    "label": "offAll",
+    "code": "PosDigital.getInstance().getLed().turnOffAll()",
+    "message": "Desliga todos os leds"
+  },
+  {
+    "id": "ON_RED",
+    "label": "onRead",
+    "code": "PosDigital.getInstance().getLed().turnOnRed()",
+    "message": "Liga o led vermelho"
+  },
+  {
+    "id": "OFF_RED",
+    "label": "offRed",
+    "code": "PosDigital.getInstance().getLed().turnOffRed()",
+    "message": "Desliga o led vermelho"
+  },
+  {
+    "id": "ON_BLUE",
+    "label": "onBlue",
+    "code": "PosDigital.getInstance().getLed().turnOnBlue()",
+    "message": "Liga o led azul"
+  },
+  {
+    "id": "OFF_BLUE",
+    "label": "offBlue",
+    "code": "PosDigital.getInstance().getLed().turnOffBlue()",
+    "message": "Desliga o led azul"
+  },
+  {
+    "id": "ON_YELLOW",
+    "label": "onYellow",
+    "code": "PosDigital.getInstance().getLed().turnOnYellow()",
+    "message": "Liga o led amarelo"
+  },
+  {
+    "id": "OFF_YELLOW",
+    "label": "offYellow",
+    "code": "PosDigital.getInstance().getLed().turnOffYellow()",
+    "message": "Desliga o led amarelo"
+  },
+  {
+    "id": "ON_GREEN",
+    "label": "onGreen",
+    "code": "PosDigital.getInstance().getLed().turnOnGreen()",
+    "message": "Liga o led verde"
+  },
+  {
+    "id": "OFF_GREEN",
+    "label": "offGreen",
+    "code": "PosDigital.getInstance().getLed().turnOffGreen()",
+    "message": "Desliga o led verde"
+  }
+]

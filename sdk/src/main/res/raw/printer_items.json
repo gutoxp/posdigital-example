@@ -1,0 +1,62 @@
+[
+  {
+    "id": "PRINTER",
+    "label": "Impressora",
+    "icon": "drawable/ic_printer",
+    "message": "Com este serviço o desenvolvedor pode imprimir textos, código de barras, QRCode e bitmaps.\n\nHá exemplos de uso na classe PrinterActivity contida no projeto de exemplo."
+  },
+  {
+    "id": "INIT",
+    "label": "init",
+    "code": "PosDigital.getInstance().getPrinter().init()",
+    "message": "Para dar inicio na impressão é nesecessário executar este método. O método init irá ligar e se conectar a impressora."
+  },
+  {
+    "id": "PRINT",
+    "label": "print",
+    "code": "PosDigital.getInstance().getPrinter().print(IPrinterCallback.Stub())",
+    "message": "Imprime todos os itens adicionados a fila de impressão e retornará o status da impressão no callback."
+  },
+  {
+    "id": "STATUS",
+    "label": "getStatus",
+    "code": "PosDigital.getInstance().getPrinter().status",
+    "message": "Retorna o status da impressora. Na classe PrinterActivity há exemplos de como identificar os status retornados."
+  },
+  {
+    "id": "TEXT",
+    "label": "addText",
+    "code": "PosDigital.getInstance().getPrinter().addText(AlignMode.LEFT, \"Text align:\")",
+    "message": "Adiciona uma linha na fila de impressão."
+  },
+  {
+    "id": "DEFINE",
+    "label": "defineFontFormat",
+    "code": "PosDigital.getInstance().getPrinter().defineFontFormat(FontFormat.MEDIUM)",
+    "message": "Define o tamanho da fonte usada nas próximas linhas adicionadas a fila de impressão. O desenvolvedor deve usar as constantes da classe FontFormat para não obter comportamentos inesperados."
+  },
+  {
+    "id": "GRAY",
+    "label": "setGray",
+    "code": "PosDigital.getInstance().getPrinter().setGray(3)",
+    "message": "Define a tonalidade de cinza que a impressora deve utilizar. Esse método aceita valores de 1 ... 5"
+  },
+  {
+    "id": "BMP",
+    "label": "addImageBitmap",
+    "code": "PosDigital.getInstance().getPrinter().addImageBitmap(AlignMode.CENTER, BITMAP)",
+    "message": "Adiciona um bitmap a fila de impressão. Com este método o desenvolvedor poderá customizar fonte, tamanho, espaçamentro entre letras..."
+  },
+  {
+    "id": "BARCODE",
+    "label": "addBarCode",
+    "code": "PosDigital.getInstance().getPrinter().addBarCode(AlignMode.CENTER, \"12345678901234567890\")",
+    "message": "Adiciona um código de barras na fila de impressao. Informe o número e será adicionado um código de barras na horizontal"
+  },
+  {
+    "id": "QRCODE",
+    "label": "addQrCode",
+    "code": "PosDigital.getInstance().getPrinter().addQrCode(AlignMode.CENTER, 240, \"www.getnet.com.br\")",
+    "message": "Adiciona um QrCode a fila de impressão. Informe uma string e e será adicionado um QrCode a fila de impressão."
+  }
+]

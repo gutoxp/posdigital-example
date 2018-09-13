@@ -1,0 +1,56 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextAppearance.Header.Title" parent="android:TextAppearance">
+        <item name="android:textSize">@dimen/header_title_fontSize</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.Header.Label" parent="TextAppearance.Header.Title">
+        <item name="android:textSize">@dimen/header_label_fontSize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.Item.Title" parent="android:TextAppearance">
+        <item name="android:textSize">@dimen/item_title_fontSize</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="TextAppearance.Item.Text" parent="android:TextAppearance">
+        <item name="android:textSize">@dimen/item_text_fontSize</item>
+        <item name="android:textColor">#FF444444</item>
+    </style>
+
+    <style name="TextAppearance.Dialog.Title" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">27sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/grey_80</item>
+    </style>
+
+    <style name="TextAppearance.Slip" parent="android:TextAppearance">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="TextAppearance.Slip.Medium" parent="TextAppearance.Slip">
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="TextAppearance.Slip.Small" parent="TextAppearance.Slip">
+        <item name="android:textSize">7sp</item>
+    </style>
+
+    <style name="TextAppearance.Slip.Header" parent="TextAppearance.Slip">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Button.Primary" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

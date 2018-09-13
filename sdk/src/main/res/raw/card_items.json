@@ -1,0 +1,32 @@
+[
+  {
+    "id": "CARD",
+    "label": "Cartão",
+    "icon": "drawable/ic_card",
+    "message": "Com este serviço o desenvolvedor poderá adicionar callbacks para identificar quando um cartão for inserido, passado e/ou aproximado.\n\nHá exemplos de uso no projeto na classe CardActivity contida no projeto de exemplo."
+  },
+  {
+    "id": "NFC",
+    "label": "NFC",
+    "code": "val timeout = 30\n\nval searchType = arrayOf(SearchType.NFC)\n\nPosDigital.getInstance().getCard().search(timeout, searchType, ICardCallback.Stub())",
+    "message": "Para ligar a antena do NFC"
+  },
+  {
+    "id": "CHIP",
+    "label": "CHIP",
+    "code": "val timeout = 30\n\nval searchType = arrayOf(SearchType.CHIP)\n\nPosDigital.getInstance().getCard().search(timeout, searchType, ICardCallback.Stub())",
+    "message": "Para ligar a leitora de CHIP"
+  },
+  {
+    "id": "MAG",
+    "label": "MAG",
+    "code": "val timeout = 30\n\nval searchType = arrayOf(SearchType.MAG)\n\nPosDigital.getInstance().getCard().search(timeout, searchType, ICardCallback.Stub())",
+    "message": "Para ligar a leitora da Tarja"
+  },
+  {
+    "id": "ALL",
+    "label": "NFC, CHIP e TARJA",
+    "code": "val timeout = 30\n\nval searchType = arrayOf(SearchType.MAG, SearchType.CHIP, SearchType.NFC)\n\nPosDigital.getInstance().getCard().search(timeout, searchType, ICardCallback.Stub())",
+    "message": "Para ligar a leitora da Tarja, CHIP e NFC"
+  }
+]

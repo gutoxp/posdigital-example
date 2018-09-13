@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/item_icon"
+        android:layout_width="@dimen/item_icon_width"
+        android:layout_height="@dimen/item_icon_height"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_card" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_title"
+        style="@style/TextAppearance.Item.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_icon"
+        tools:text="Barcode" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_text"
+        style="@style/TextAppearance.Item.Text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_title"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit." />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/item_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="#FF444444"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_text">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_code"
+            style="@style/TextAppearance.Item.Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFFFF"
+            tools:text="val searchType = arrayOf(SearchType.MAG, SearchType.CHIP, SearchType.NFC)\n\nPosDigital.getInstance().getCard().search(timeout, searchType, ICardCallback.Stub())" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/item_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_title" />
+
+</android.support.constraint.ConstraintLayout>
