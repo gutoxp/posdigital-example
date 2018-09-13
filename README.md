@@ -2,32 +2,32 @@
 
 ## Pagamento
 
-Para realizar pagamentos será preciso invocar deeplinks. Veja mais detalhes no ![PDF](https://github.com/GETNETBrasil/posdigital-example/tree/master/payment/DOCS/api_pagamento_getnet.pdf).
-O ![app](https://github.com/GETNETBrasil/posdigital-example/tree/master/payment/DOCS/Rebatedor-v2.2.0.apk) simula as respostas do app de Pagamento então você precisa instalar este app no terminal durante o desenvolvimento, assim você não irá precisar dos cartões de teste.
+Para realizar pagamentos será preciso invocar deeplinks. Veja mais detalhes no [PDF](https://github.com/GETNETBrasil/posdigital-example/tree/master/payment/DOCS/api_pagamento_getnet.pdf).
+O [app](https://github.com/GETNETBrasil/posdigital-example/tree/master/payment/DOCS/Rebatedor-v2.2.0.apk) simula as respostas do app de Pagamento então você precisa instalar este app no terminal durante o desenvolvimento, assim você não irá precisar dos cartões de teste.
 
 ## O que você precisa saber antes de começar a desenvolver
 
-1. O desenvolvimento do aplicativo pode ser nativo ou híbrido (Exemplo: Xamarin, porque o
+* O desenvolvimento do aplicativo pode ser nativo ou híbrido (Exemplo: Xamarin, porque o
 Xamarin irá compilar o código para o “Android Runtime (ART)” como se fosse um app
 nativo)
-2. É expressamente proibido WebApps e WebView devido a medidas de segurança
-3. O GooglePlayService não estará disponível
-4. Suporte ao Android 5.1 (22)
-5. É de responsabilidade do desenvolvedor garantir a segurança da informação circulada
+* É expressamente proibido WebApps e WebView devido a medidas de segurança
+* O GooglePlayService não estará disponível
+* Suporte ao Android 5.1 (22)
+* É de responsabilidade do desenvolvedor garantir a segurança da informação circulada
 dentro do aplicativo.
 
 ## Boas práticas
 
-1. Uso consciente do consumo de dados
-2. Uso consciente do consumo de bobina de impressão
-3. Uso consciente do consumo de memória e cpu
-4. Utilização das boas práticas de programação Android
-5. Evite funcionalidades com timeout infinito que possa deixar sua aplicação travada
+* Uso consciente do consumo de dados
+* Uso consciente do consumo de bobina de impressão
+* Uso consciente do consumo de memória e cpu
+* Utilização das boas práticas de programação Android
+* Evite funcionalidades com timeout infinito que possa deixar sua aplicação travada
 aguardando algum evento.
-6. Utilizar layout dinâmicos considerando que no futuro o app pode ser instalado em outros
+* Utilizar layout dinâmicos considerando que no futuro o app pode ser instalado em outros
 hardwares com resolução e densidade diferentes.
-7. Tamanho do APK
-8. Evite expor dados sensíveis dos clientes, tais como, senhas, informações pessoais...
+* Tamanho do APK
+* Evite expor dados sensíveis dos clientes, tais como, senhas, informações pessoais...
 
 # SDK
 
@@ -38,6 +38,7 @@ O modulo SDK é um exemplo de integração entre o app e o hardware. Para utiliz
 Esta disponibilizado na pasta sdk/libs uma .aar. Basta importar este .aar no Gradle e a PosDigital está disponível para uso.
 
 No gradle do seu app adicione essa linha:
+
 ```
 android {
   compileSdkVersion 27
